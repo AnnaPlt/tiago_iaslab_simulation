@@ -10,7 +10,7 @@ GetStraightline::GetStraightline(std::shared_ptr<ros::NodeHandle> nh_ptr)
 }
 
 void GetStraightline::start(){
-  coefficients_server_ = nh_ptr_->advertiseService("/straight_line_coefficients", &GetStraightline::coeffsService, this);
+  coefficients_server_ = nh_ptr_->advertiseService("/straight_line_srv", &GetStraightline::coeffsService, this);
   ROS_INFO_STREAM("Service called!");
 }
 
@@ -57,14 +57,3 @@ int main(int argc, char **argv){
 
   return 0;
 }
-
-
-/*x: -0.0006502187255741645
-            y: 0.08722621103882858
-            z: 0.7083295381429472
-          orientation: 
-            x: 0.7718361606993515
-            y: 0.41887594686395135
-            z: -0.22812128634046264
-            w: 0.4204432909371797
-*/
