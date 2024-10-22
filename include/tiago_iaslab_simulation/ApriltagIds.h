@@ -1,5 +1,5 @@
-#ifndef TIAGO_IASLAB_SIMULATION_HUMAN_H
-#define TIAGO_IASLAB_SIMULATION_HUMAN_H
+#ifndef TIAGO_IASLAB_SIMULATION_APRILTAGIDS_H
+#define TIAGO_IASLAB_SIMULATION_APRILTAGIDS_H
 
 #include <ros/ros.h>
 #include <std_msgs/Bool.h>
@@ -8,21 +8,19 @@
 #include <algorithm>
 #include <vector>
 
-class Human{
+class ApriltagIds{
     public:
-        Human(std::shared_ptr<ros::NodeHandle> nh_ptr);
-        ~Human() {}
+        ApriltagIds(std::shared_ptr<ros::NodeHandle> nh_ptr);
+        ~ApriltagIds() {}
 
     private:
-        const int MAX_ = 15;
-        const int MIN_ = 1;
 
         std::shared_ptr<ros::NodeHandle> nh_ptr_;
         ros::ServiceServer objects_server_;
 
         void start();
         bool objService(tiago_iaslab_simulation::Objs::Request &req, tiago_iaslab_simulation::Objs::Response &res);
-        int randomNumber();
+        std::vector<int> generate_ids();
 };
 
 #endif

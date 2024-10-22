@@ -25,17 +25,15 @@ bool Human::objService(tiago_iaslab_simulation::Objs::Request &req, tiago_iaslab
         return false;
     }
     std::vector<int> ids_vec;
-    if(req.all_objs){
+    /*if(req.all_objs){
       while(ids_vec.size() < 3){
         int num = randomNumber();
         if(std::find(ids_vec.begin(), ids_vec.end(), num) == ids_vec.end()){
           ids_vec.push_back(num);
         }
       }
-    }
-    else{
-      ids_vec.push_back(randomNumber());
-    }
+    }*/
+    ids_vec.push_back(randomNumber());
     res.ids = ids_vec;
     return true;
 }

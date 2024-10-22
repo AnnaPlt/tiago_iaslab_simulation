@@ -1,13 +1,13 @@
 #include <ros/ros.h>
-#include <tiago_iaslab_simulation/Human.h>
+#include <tiago_iaslab_simulation/ApriltagIds.h>
 #include <vector>
 #include <ctime>
 
 int main(int argc, char **argv){
-  ros::init(argc, argv, "human_node");
+  ros::init(argc, argv, "ids_generator_node");
   auto nh_ptr = std::make_shared<ros::NodeHandle>();
 
-  Human human(nh_ptr);
+  ApriltagIds ids(nh_ptr);
 
   ros::spin();
 

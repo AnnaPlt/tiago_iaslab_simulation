@@ -1,3 +1,3 @@
 bool ready          #if true human_node send the object's ID, otherwise human_node print an error and kill ros
 ---
-int32[] ids
+float32[] coeffs

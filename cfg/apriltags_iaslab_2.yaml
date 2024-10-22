@@ -1,0 +1,19 @@
+standalone_tags:
+  [
+    {id: 1, size: 0.032, frame_id: blue_hexagon},
+    {id: 2, size: 0.032, frame_id: blue_hexagon},
+    {id: 3, size: 0.032, frame_id: blue_hexagon},
+    {id: 4, size: 0.032, frame_id: blue_hexagon},
+    {id: 5, size: 0.032, frame_id: blue_hexagon},
+    {id: 6, size: 0.032, frame_id: blue_hexagon},
+    {id: 7, size: 0.032, frame_id: blue_hexagon},
+    {id: 8, size: 0.032, frame_id: blue_hexagon},
+    {id: 9, size: 0.032, frame_id: blue_hexagon},
+    {id: 10, size: 0.032, frame_id: blue_hexagon},
+    {id: 11, size: 0.032, frame_id: blue_hexagon},
+    {id: 12, size: 0.032, frame_id: blue_hexagon},
+    {id: 13, size: 0.032, frame_id: blue_hexagon},
+    {id: 14, size: 0.032, frame_id: blue_hexagon},
+    {id: 15, size: 0.032, frame_id: blue_hexagon},
+    
+  ]
