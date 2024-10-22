@@ -1,6 +1,8 @@
+<?xml version='1.0'?>
 <sdf version='1.7'>
   <world name='default'>
     <plugin name='ros_link_attacher_plugin' filename='libgazebo_ros_link_attacher.so'/>
+    
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
@@ -19,6 +21,7 @@
         <falloff>0</falloff>
       </spot>
     </light>
+
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -67,6 +70,7 @@
         <enable_wind>0</enable_wind>
       </link>
     </model>
+
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -75,11 +79,13 @@
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
+
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
       <shadows>1</shadows>
     </scene>
+
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <latitude_deg>0</latitude_deg>
@@ -87,11 +93,13 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
+
     <state world_name='default'>
       <sim_time>6205 39000000</sim_time>
       <real_time>201 101083081</real_time>
       <wall_time>1729158312 884438002</wall_time>
       <iterations>193247</iterations>
+      
       <model name='construction_cone_1'>
         <pose>6.31383 -2.49412 0.728545 0 -0 -3.6e-05</pose>
         <scale>0.366191 0.366191 1.4571</scale>
@@ -157,15 +165,15 @@
         <scale>1 1 1</scale>
         <link name='poly_1_link'>
           <pose>7.00095 0.007533 0.049997 -2e-06 -6e-05 0.012681</pose>
-          <velocity>-0.004097 -2.5e-05 -0.003343 0.000951 -0.081975 -0.000251</velocity>
-          <acceleration>-2.21368 -0.006565 -6.68186 0.544841 0.005518 -0.268073</acceleration>
-          <wrench>-1.54957 -0.004596 -4.6773 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag1'>
           <pose>7.00094 0.007533 0.100997 6e-06 -7.1e-05 0.012681</pose>
-          <velocity>-0.008364 -6.3e-05 -0.003347 0.000878 -0.084038 -0.000804</velocity>
-          <acceleration>-3.69208 -0.005566 -6.68979 0.173112 -0.743125 -1.27392</acceleration>
-          <wrench>-0.369208 -0.000557 -0.668979 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_10'>
@@ -173,15 +181,15 @@
         <scale>1 1 1</scale>
         <link name='poly_10_link'>
           <pose>-0.541225 2.0852 0.049997 -1e-06 6.7e-05 2.17992</pose>
-          <velocity>-0.002401 0.003531 -0.003578 -0.070634 -0.048003 2.3e-05</velocity>
-          <acceleration>-0.915547 1.62016 -7.15515 -0.97836 0.578079 0.031718</acceleration>
-          <wrench>-0.640883 1.13411 -5.00861 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag10'>
           <pose>-0.541228 2.0852 0.100997 0 7.4e-05 2.17992</pose>
-          <velocity>-0.004836 0.007153 -0.003582 -0.07098 -0.047589 0.001734</velocity>
-          <acceleration>-1.51953 2.86328 -7.16345 1.49461 0.315799 0.311796</acceleration>
-          <wrench>-0.151953 0.286328 -0.716345 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_11'>
@@ -189,15 +197,15 @@
         <scale>1 1 1</scale>
         <link name='poly_11_link'>
           <pose>-3.4629 0.942913 0.049997 1e-06 -6.7e-05 0.528688</pose>
-          <velocity>-0.003712 -0.00206 -0.003592 0.041141 -0.074264 4.1e-05</velocity>
-          <acceleration>-1.7338 -0.637744 -7.18466 -3.00897 0.110903 -3.09474</acceleration>
-          <wrench>-1.21366 -0.446421 -5.02926 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag11'>
           <pose>-3.4629 0.942912 0.100997 -1e-06 -7.4e-05 0.528683</pose>
-          <velocity>-0.007528 -0.004156 -0.003597 0.040815 -0.074858 0.001502</velocity>
-          <acceleration>-3.01749 -1.22567 -7.19427 -0.422344 -0.744459 -0.17233</acceleration>
-          <wrench>-0.301749 -0.122567 -0.719427 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_12'>
@@ -205,15 +213,15 @@
         <scale>1 1 1</scale>
         <link name='poly_12_link'>
           <pose>2.71599 -0.958602 0.049997 -6.4e-05 -0 -1.13472</pose>
-          <velocity>0.003835 0.001666 -0.003515 -0.03343 0.076705 -7.7e-05</velocity>
-          <acceleration>1.84697 0.603828 -7.02916 0.384407 -0.787945 -0.068561</acceleration>
-          <wrench>1.29288 0.42268 -4.92041 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag12'>
           <pose>2.71599 -0.9586 0.100997 -7.2e-05 1e-06 -1.13473</pose>
-          <velocity>0.007785 0.003407 -0.00352 -0.034062 0.077481 0.001352</velocity>
-          <acceleration>3.2145 1.1629 -7.03932 0.416421 -0.672321 -0.352184</acceleration>
-          <wrench>0.32145 0.11629 -0.703932 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_13'>
@@ -221,15 +229,15 @@
         <scale>1 1 1</scale>
         <link name='poly_13_link'>
           <pose>4.9402 -0.9969 0.049997 1e-06 -6e-05 0.083121</pose>
-          <velocity>-0.004088 -0.000287 -0.003338 0.005558 -0.081824 9.1e-05</velocity>
-          <acceleration>-2.19433 -0.114248 -6.70542 2.15111 0.376514 0.109467</acceleration>
-          <wrench>-1.53603 -0.079974 -4.69379 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag13'>
           <pose>4.9402 -0.996899 0.100997 -7e-06 -7.1e-05 0.08312</pose>
-          <velocity>-0.008353 -0.000626 -0.003343 0.006594 -0.083794 0.000388</velocity>
-          <acceleration>-3.65927 -0.278806 -6.71349 2.74984 -0.045844 0.506492</acceleration>
-          <wrench>-0.365927 -0.027881 -0.671349 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_14'>
@@ -237,15 +245,15 @@
         <scale>1 1 1</scale>
         <link name='poly_14_link'>
           <pose>-6.16538 0.376147 0.049997 6.7e-05 -1e-06 -0.61093</pose>
-          <velocity>-0.002409 -0.003527 -0.003578 0.070549 -0.048148 -2.3e-05</velocity>
-          <acceleration>-0.919441 -1.61644 -7.15669 0.904137 0.499892 -0.031499</acceleration>
-          <wrench>-0.643609 -1.13151 -5.00968 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag14'>
           <pose>-6.16538 0.376144 0.100997 7.4e-05 0 -0.610923</pose>
-          <velocity>-0.00485 -0.007144 -0.003582 0.070889 -0.047736 -0.001718</velocity>
-          <acceleration>-1.52739 -2.85664 -7.16499 -1.54903 0.381818 -0.280283</acceleration>
-          <wrench>-0.152739 -0.285664 -0.716499 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_15'>
@@ -253,15 +261,15 @@
         <scale>1 1 1</scale>
         <link name='poly_15_link'>
           <pose>6.35805 3.11425 0.049997 0 -6.3e-05 2.85097</pose>
-          <velocity>0.004015 -0.001069 -0.003445 0.021497 0.080343 7.2e-05</velocity>
-          <acceleration>2.08136 -0.367684 -6.83655 -1.93612 -0.583386 -3.08008</acceleration>
-          <wrench>1.45695 -0.257378 -4.78558 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag15'>
           <pose>6.35806 3.11425 0.100997 7e-06 -7.4e-05 2.85097</pose>
-          <velocity>0.008123 -0.00225 -0.003452 0.023132 0.08093 -0.000434</velocity>
-          <acceleration>3.43093 -0.823511 -6.84969 -1.72721 -1.10103 -1.82987</acceleration>
-          <wrench>0.343093 -0.082351 -0.684969 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_2'>
@@ -269,15 +277,15 @@
         <scale>1 1 1</scale>
         <link name='poly_2_link'>
           <pose>4.22819 -3.2769 0.049997 -2e-06 -6e-05 0.012658</pose>
-          <velocity>-0.004097 -2.5e-05 -0.003343 0.00095 -0.081975 -0.000251</velocity>
-          <acceleration>-2.21368 -0.006535 -6.68186 0.544173 0.005567 -0.268034</acceleration>
-          <wrench>-1.54957 -0.004575 -4.6773 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag2'>
           <pose>4.22818 -3.2769 0.100997 6e-06 -7.1e-05 0.012658</pose>
-          <velocity>-0.008364 -6.3e-05 -0.003347 0.000876 -0.084038 -0.000804</velocity>
-          <acceleration>-3.69208 -0.005496 -6.68979 0.172385 -0.743047 -1.27374</acceleration>
-          <wrench>-0.369208 -0.00055 -0.668979 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_3'>
@@ -285,15 +293,15 @@
         <scale>1 1 1</scale>
         <link name='poly_3_link'>
           <pose>0.305558 -2.17589 0.049997 -1e-06 6e-05 0.012661</pose>
-          <velocity>0.004095 5.7e-05 -0.00334 -0.000768 0.081942 0.000208</velocity>
-          <acceleration>2.21016 0.025915 -6.68511 -0.180201 -0.072929 0.225172</acceleration>
-          <wrench>1.54712 0.01814 -4.67958 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag3'>
           <pose>0.305561 -2.17589 0.100997 6e-06 7.1e-05 0.012661</pose>
-          <velocity>0.008364 0.000118 -0.003344 -0.001098 0.083983 0.000685</velocity>
-          <acceleration>3.69195 0.070284 -6.69297 -0.615379 0.63387 1.07948</acceleration>
-          <wrench>0.369195 0.007028 -0.669297 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_4'>
@@ -301,15 +309,15 @@
         <scale>1 1 1</scale>
         <link name='poly_4_link'>
           <pose>6.49418 -2.26681 0.049997 1e-06 6.1e-05 -0.158787</pose>
-          <velocity>0.004082 -0.000542 -0.003368 0.010862 0.081699 1.7e-05</velocity>
-          <acceleration>2.1527 -0.210717 -6.75533 -2.01681 -1.18117 -0.000412</acceleration>
-          <wrench>1.50689 -0.147502 -4.72873 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag4'>
           <pose>6.49418 -2.26681 0.100997 -7e-06 7.1e-05 -0.158784</pose>
-          <velocity>0.008289 -0.001186 -0.003375 0.012567 0.083495 -0.000393</velocity>
-          <acceleration>3.5826 -0.502277 -6.7627 -1.32584 -0.658833 0.217262</acceleration>
-          <wrench>0.35826 -0.050228 -0.67627 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_5'>
@@ -317,15 +325,15 @@
         <scale>1 1 1</scale>
         <link name='poly_5_link'>
           <pose>2.05439 2.49627 0.049997 -6.2e-05 1e-06 -0.339649</pose>
-          <velocity>0.001291 0.00392 -0.003429 -0.078432 0.025855 3.4e-05</velocity>
-          <acceleration>0.456741 2.01572 -6.85827 0.55476 0.246689 -3.1157</acceleration>
-          <wrench>0.319719 1.411 -4.80079 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag5'>
           <pose>2.05439 2.49627 0.100997 -7.1e-05 -1e-06 -0.339642</pose>
-          <velocity>0.002632 0.007981 -0.003434 -0.079731 0.026183 -0.001257</velocity>
-          <acceleration>0.901805 3.49861 -6.86896 0.337653 0.787764 -2.55624</acceleration>
-          <wrench>0.090181 0.349861 -0.686896 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_6'>
@@ -333,15 +341,15 @@
         <scale>1 1 1</scale>
         <link name='poly_6_link'>
           <pose>3.88625 1.01625 0.049997 -0 -6.1e-05 -0.196911</pose>
-          <velocity>-0.004072 0.000677 -0.003389 -0.013626 -0.081501 5.6e-05</velocity>
-          <acceleration>-2.13572 0.260745 -6.77187 0.951258 1.50364 0.040428</acceleration>
-          <wrench>-1.49501 0.182521 -4.74031 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag6'>
           <pose>3.88625 1.01625 0.100997 8e-06 -7.4e-05 -0.196905</pose>
-          <velocity>-0.008252 0.001474 -0.003394 -0.015642 -0.082436 -0.000772</velocity>
-          <acceleration>-3.54756 0.614704 -6.77998 0.270614 0.646118 0.681763</acceleration>
-          <wrench>-0.354756 0.06147 -0.677998 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_7'>
@@ -349,15 +357,15 @@
         <scale>1 1 1</scale>
         <link name='poly_7_link'>
           <pose>0.042824 0.033731 0.049997 1e-06 -6e-05 0.014226</pose>
-          <velocity>-0.004094 -6.2e-05 -0.00334 0.000874 -0.08194 0.000205</velocity>
-          <acceleration>-2.20994 -0.027898 -6.68537 0.224535 0.077158 0.222529</acceleration>
-          <wrench>-1.54696 -0.019529 -4.67976 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag7'>
           <pose>0.042821 0.033731 0.100997 -6e-06 -7.1e-05 0.014226</pose>
-          <velocity>-0.008364 -0.00013 -0.003344 0.00122 -0.083979 0.000677</velocity>
-          <acceleration>-3.69169 -0.074962 -6.69323 0.66382 -0.624566 1.06721</acceleration>
-          <wrench>-0.369169 -0.007496 -0.669323 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_8'>
@@ -365,15 +373,15 @@
         <scale>1 1 1</scale>
         <link name='poly_8_link'>
           <pose>1.72368 -2.95852 0.049997 -6.7e-05 1e-06 -2.09793</pose>
-          <velocity>0.003715 -0.002053 -0.003591 0.041012 0.074311 -3.9e-05</velocity>
-          <acceleration>1.73585 -0.637413 -7.18171 -3.01347 -0.151387 3.09642</acceleration>
-          <wrench>1.21509 -0.446189 -5.0272 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag8'>
           <pose>1.72369 -2.95853 0.100997 -7.4e-05 -1e-06 -2.09793</pose>
-          <velocity>0.007533 -0.004144 -0.003596 0.040702 0.074906 -0.001501</velocity>
-          <acceleration>3.021 -1.22503 -7.19133 -0.419243 0.720697 0.172358</acceleration>
-          <wrench>0.3021 -0.122503 -0.719133 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='poly_9'>
@@ -381,15 +389,15 @@
         <scale>1 1 1</scale>
         <link name='poly_9_link'>
           <pose>4.45588 3.10434 0.049996 2.4e-05 -5e-05 2.64577</pose>
-          <velocity>0.00325 2.5e-05 -0.004313 -0.00026 0.06546 0.000515</velocity>
-          <acceleration>1.00739 0.290043 -8.62671 -2.41892 1.38624 -2.62743</acceleration>
-          <wrench>0.705175 0.20303 -6.0387 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='tag9'>
           <pose>4.45588 3.10434 0.100996 2.8e-05 -5.3e-05 2.64577</pose>
-          <velocity>0.006826 0.00017 -0.00432 -0.003172 0.07068 0.001314</velocity>
-          <acceleration>2.25015 0.697346 -8.64016 1.39761 1.03093 -1.02938</acceleration>
-          <wrench>0.225015 0.069735 -0.864016 0 -0 0</wrench>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='room_walls'>
@@ -502,6 +510,7 @@
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
+
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose>2.07005 1.16499 15.6976 2e-05 1.5698 -1.76904</pose>
@@ -512,6 +521,7 @@
     <audio>
       <device>default</device>
     </audio>
+    
     <model name='room_walls'>
       <pose>-1.5563 0.448931 0 0 -0 0</pose>
       <link name='Wall_1'>
@@ -1476,6 +1486,7 @@
       <pose>1.24514 -1.61317 0 0 -0 0</pose>
     </model>
     <model name='poly_1'>
+      <static>1</static>
       <link name='poly_1_link'>
         <inertial>
           <mass>0.7</mass>
@@ -1530,7 +1541,6 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose>1.51823 -1.28291 0.901823 -0 0.000184 0.015007</pose>
       <link name='tag1'>
         <pose>0 0 0.051 0 -0 0</pose>
         <collision name='collision'>
@@ -1592,6 +1602,7 @@
       </joint>
     </model>
     <model name='poly_4'>
+      <static>1</static>
       <link name='poly_4_link'>
         <inertial>
           <mass>0.7</mass>
@@ -1643,8 +1654,6 @@
         <gravity>1</gravity>
         <enable_wind>0</enable_wind>
       </link>
-      <static>0</static>
-      <pose>1.246 -1.73825 0.018124 -0 0.000184 0.015007</pose>
       <link name='tag4'>
         <pose>0 0 0.051 0 -0 0</pose>
         <collision name='collision'>
@@ -1714,7 +1723,7 @@
       </joint>
     </model>
     <model name='poly_7'>
-      <pose>0 0 0 0 -0 0</pose>
+      <static>1</static>
       <link name='poly_7_link'>
         <inertial>
           <mass>0.7</mass>
@@ -1828,7 +1837,7 @@
     </model>
     <model name='place_table_r'>
       <static>1</static>
-      <pose>4.0074 1.01597 0.345 0 -0 0</pose>
+      <pose>0.343307 -3.08766 0.345 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -1884,7 +1893,6 @@
     </model>
     <model name='place_table_g'>
       <static>1</static>
-      <pose>5.0074 1.01597 0.345 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -1939,7 +1947,7 @@
       </link>
     </model>
     <model name='poly_8'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_8_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2052,7 +2060,7 @@
       </joint>
     </model>
     <model name='poly_9'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_9_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2165,7 +2173,7 @@
       </joint>
     </model>
     <model name='poly_10'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_10_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2278,7 +2286,7 @@
       </joint>
     </model>
     <model name='poly_11'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_11_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2390,8 +2398,9 @@
         <pose>0 0 0 0 -0 0</pose>
       </joint>
     </model>
+    
     <model name='poly_12'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_12_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2504,7 +2513,7 @@
       </joint>
     </model>
     <model name='poly_13'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_13_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2617,7 +2626,7 @@
       </joint>
     </model>
     <model name='poly_14'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_14_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2730,7 +2739,7 @@
       </joint>
     </model>
     <model name='poly_15'>
-      <pose>5.81382 3.05107 0.024995 -0 0.000184 0.015007</pose>
+      <static>1</static>
       <link name='poly_15_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2843,6 +2852,7 @@
       </joint>
     </model>
     <model name='poly_5'>
+      <static>1</static>
       <link name='poly_5_link'>
         <inertial>
           <mass>0.7</mass>
@@ -2894,7 +2904,6 @@
         <gravity>1</gravity>
         <enable_wind>0</enable_wind>
       </link>
-      <pose>2.40338 2.2087 0.01083 -0 0.000184 0.015007</pose>
       <link name='tag5'>
         <pose>0 0 0.051 0 -0 0</pose>
         <collision name='collision'>
@@ -2964,6 +2973,7 @@
       </joint>
     </model>
     <model name='poly_2'>
+      <static>1</static>
       <link name='poly_2_link'>
         <inertial>
           <mass>0.7</mass>
@@ -3018,7 +3028,6 @@
         <gravity>1</gravity>
         <enable_wind>0</enable_wind>
       </link>
-      <pose>2.74986 -3.33797 0.052682 -0 0.000184 0.015007</pose>
       <link name='tag2'>
         <pose>0 0 0.051 0 -0 0</pose>
         <collision name='collision'>
@@ -3080,6 +3089,7 @@
       </joint>
     </model>
     <model name='poly_3'>
+      <static>1</static>
       <link name='poly_3_link'>
         <inertial>
           <mass>0.7</mass>
@@ -3134,7 +3144,6 @@
         <gravity>1</gravity>
         <enable_wind>0</enable_wind>
       </link>
-      <pose>1.54333 -1.42603 0.052683 -0 0.000184 0.015007</pose>
       <link name='tag3'>
         <pose>0 0 0.051 0 -0 0</pose>
         <collision name='collision'>
@@ -3196,6 +3205,7 @@
       </joint>
     </model>
     <model name='poly_6'>
+      <static>1</static>
       <link name='poly_6_link'>
         <inertial>
           <mass>0.7</mass>
@@ -3247,7 +3257,6 @@
         <gravity>1</gravity>
         <enable_wind>0</enable_wind>
       </link>
-      <pose>4.01785 0.994766 0.010828 -0 0.000184 0.015007</pose>
       <link name='tag6'>
         <pose>0 0 0.051 0 -0 0</pose>
         <collision name='collision'>

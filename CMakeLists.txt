@@ -122,20 +122,14 @@ include_directories(
 )
 
 ## Declare a C++ library
-add_library(${PROJECT_NAME}_human
-  src/Human.cpp
-)
-
 add_library(${PROJECT_NAME}_apriltagids
   src/apriltag_ids.cpp
 )
-
 add_library(${PROJECT_NAME}_get_straightline
   src/get_straightline_node.cpp
 )
 
 target_link_libraries(
-  ${PROJECT_NAME}_human
   ${PROJECT_NAME}_apriltagids
   ${PROJECT_NAME}_get_straightline
   ${catkin_LIBRARIES}
@@ -145,12 +139,10 @@ target_link_libraries(
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(${PROJECT_NAME}_human ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(human_node src/Human_node.cpp)
 add_executable(apriltag_ids_generator_node src/apriltag_ids_generator_node.cpp)
 add_executable(get_straightline_node src/get_straightline_node.cpp)
 
@@ -163,12 +155,10 @@ add_executable(get_straightline_node src/get_straightline_node.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(human_node ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(apriltag_ids_generator_node ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(get_straightline_node ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(human_node ${catkin_LIBRARIES} ${PROJECT_NAME}_human)
 target_link_libraries(apriltag_ids_generator_node ${catkin_LIBRARIES} ${PROJECT_NAME}_apriltagids)
 target_link_libraries(get_straightline_node ${catkin_LIBRARIES} ${PROJECT_NAME}_get_straightline)
 #############

@@ -9,7 +9,7 @@ ApriltagIds::ApriltagIds(std::shared_ptr<ros::NodeHandle> nh_ptr)
 
 void ApriltagIds::start(){
   objects_server_ = nh_ptr_->advertiseService("/apriltag_ids_srv", &ApriltagIds::objService, this);
-  ROS_INFO_STREAM("Service done!");
+  ROS_INFO_STREAM("Service called!");
 }
 
 std::vector<int> ApriltagIds::generate_ids()
