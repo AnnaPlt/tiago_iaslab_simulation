@@ -19,12 +19,9 @@ std::vector<float> GetStraightline::generate_coefficients()
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    // Distribuzione per il m tra 0.1 e 10 (float)
     std::uniform_real_distribution<float> d1(0.1f, 10.0f);
-    // Distribuzione per il q tra -2.0 e 2.0 (float)
     std::uniform_real_distribution<float> d2(0.0f, 0.3f);
 
-    // Genera i numeri casuali come float
     float m = d1(gen);
     float q = d2(gen);
     std::vector<float> coeffs;
