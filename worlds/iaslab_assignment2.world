@@ -413,10 +413,10 @@
         </link>
       </model>
       <model name='tag10'>
-        <pose>1.49971 -1.65074 0.776 0 -0 1.57</pose>
+        <pose>1.49971 -1.65074 0.776 0 -0 3.14</pose>
         <scale>1 1 1</scale>
         <link name='tag_10_link'>
-          <pose>1.49971 -1.65074 0.776 0 -0 1.57</pose>
+          <pose>1.49971 -1.65074 0.776 0 -0 3.14</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -1345,7 +1345,7 @@
       <pose>1.24514 -1.61317 0 0 -0 0</pose>
     </model>
     <model name='tag10'>
-      <pose>1.6 -1.8 0.776 0 -0 1.57</pose>
+      <pose>1.49971 -1.65074 0.776 0 -0 3.14</pose>
       <link name='tag_10_link'>
         <pose>0 0 -0 0 -0 0</pose>
         <inertial>
